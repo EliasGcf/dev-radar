@@ -64,7 +64,7 @@ Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomn
 
 - [Node.js](https://nodejs.org/en/)
 - [MongoDB](https://www.mongodb.com/)
-- [Yarn](https://yarnpkg.com/) ou [npm](https://www.npmjs.com/)
+- [Yarn](https://yarnpkg.com/)
 - [Expo](https://expo.io/)
 
 **Clone the project and access the folder**
@@ -73,21 +73,21 @@ Import the `Insomnia.json` on Insomnia App or click on [Run in Insomnia](#insomn
 $ git clone https://github.com/EliasGcf/dev-radar && cd dev-radar
 ```
 
+**Install dependencies**
+
+```bash
+$ yarn
+```
+
 **Follow the steps below**
 
 ### Backend
 
 ```bash
-# Starting from the project root folder, go to backend folder
-$ cd backend
-
-# Install the dependencies
-$ yarn
-
-# Edit the src/index.js and put the MongoDB URL connection
+# Edit the 'packages/server/src/index.js' and put the MongoDB URL connection
 
 # To finish, run the api service
-$ yarn dev
+$ yarn server dev
 
 # Well done, project is started!
 ```
@@ -97,16 +97,10 @@ $ yarn dev
 _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# Starting from the project root folder, go to frontend folder
-$ cd frontend
-
-# Install the dependencies
-$ yarn
-
-# Be sure the file 'src/services/api.js' have the IP to your API
+# Be sure the file 'packages/web/src/services/api.js' have the IP to your API
 
 # Start the client
-$ yarn start
+$ yarn web start
 ```
 
 ### Mobile
@@ -114,16 +108,11 @@ $ yarn start
 _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
-# Starting from the project root folder, go to mobile folder
-$ cd mobile
-
-# Install the dependencies
-$ yarn
-
-# Be sure the file 'src/services/api.js' have the IP to your API
+# Be sure the file 'packages/mobile/src/services/api.js'
+# have the IP to your API
 
 # Run the command to start expo bundle
-$ yarn start
+$ yarn mobile start
 
 # Now choose your option to install the app
 ```
